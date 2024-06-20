@@ -1,4 +1,5 @@
 "use client";
+import { useRef } from "react";
 
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
@@ -16,6 +17,8 @@ gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
 export default function Home() {
+  const ref = useRef<null | HTMLDivElement>(null);
+
   useGSAP(() => {
     gsap.from(".whole-site", { opacity: 0 });
   });
@@ -23,12 +26,18 @@ export default function Home() {
   return (
     <main className="whole-site font-[Prompt] text-[#CBB083]">
       <ProgressionBar />
-      <ProfilePicture />
+      <ProfilePicture
+        onClick={() => {
+          console.log("test");
+
+          ref.current?.scrollIntoView({ behavior: "smooth" });
+        }}
+      />
       <Landing />
       <Journey />
       <Portfolio />
       <AboutMe />
-      <Contact />
+      <Contact ref={ref} />
     </main>
   );
 }

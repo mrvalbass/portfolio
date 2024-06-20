@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
@@ -8,8 +8,6 @@ interface AnimatedLetterProps {
 }
 
 const AnimatedLetter: React.FC<AnimatedLetterProps> = ({ children }) => {
-  const letter = useRef();
-
   useGSAP(() => {
     gsap.fromTo(
       ".title-letter",

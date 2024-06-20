@@ -20,14 +20,10 @@
   background-attachment: fixed;
 }
 .progress-bar::-moz-progress-bar {
-  background: linear-gradient(
-    to left,
-    #db38b5,
-    #01b3e3,
-    #25ce7b,
-    #fdc741,
-    #ff6b01,
-    #fc4236
-  );
+  background-color: #cbb083;
   background-attachment: fixed;
+}
+
+.circle-letter {
+  transform-origin: bottom center;
 }

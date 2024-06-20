@@ -5,21 +5,22 @@ gsap.registerPlugin(useGSAP);
 
 interface AnimatedLetterProps {
   children?: React.ReactNode;
+  countIndex?: number;
 }
 
-const CircleLetter: React.FC<AnimatedLetterProps> = ({ children }) => {
-  const letter = useRef();
-
-  useGSAP(() => {
-    gsap.fromTo(
-      ".title-letter",
-      { y: 100, opacity: 0, ease: "expo.out" },
-      { y: 0, opacity: 1, duration: 0.2, stagger: 0.07, delay: 0.5 }
-    );
-  });
-
+const CircleLetter: React.FC<AnimatedLetterProps> = ({
+  countIndex,
+  children,
+}) => {
   return (
-    <div className="circle-letter font-['Rubik_Mono_One'] h-[18vh] absolute">
+    <div
+      className={`circle-letter font-['Rubik_Mono_One'] text-6xl h-[23vh] left-1/2 -translate-x-1/2 absolute`}
+      style={{
+        transform: `translateX(-50%)  rotate(${
+          countIndex ? (countIndex * 360) / 12 : 0
+        }deg)`,
+      }}
+    >
       {children}
     </div>
   );

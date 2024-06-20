@@ -3,8 +3,13 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
 import CircleLetter from "./CircleLetter";
+import React from "react";
 
-export default function ProfilePicture() {
+interface ProfilePictureProps {
+  onClick: () => void | undefined;
+}
+
+export default function ProfilePicture({ onClick }: ProfilePictureProps) {
   useGSAP(() => {
     gsap.from(".profile-picture", {
       opacity: 0,
@@ -17,21 +22,46 @@ export default function ProfilePicture() {
         start: "10% top",
         end: "10% top",
       },
-      x: "45vw",
-      y: "-15vh",
+      top: "10vh",
+      left: "95vw",
       scale: 0.3,
       reversed: true,
+    });
+    gsap.from(".circle-text", {
+      scrollTrigger: {
+        trigger: ".landing-page",
+        toggleActions: "play none reverse none",
+        start: "10% top",
+        end: "10% top",
+      },
+      opacity: 0,
+    });
+    gsap.to(".circle-text", {
+      scrollTrigger: {
+        trigger: ".landing-page",
+        toggleActions: "play none reverse none",
+        start: "10% top",
+        end: "10% top",
+      },
+      rotation: "-=360",
+      ease: "none",
+      duration: 15,
+      repeat: -1,
     });
   });
 
   return (
-    <div className="fixed z-50 size-[30vh] top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 profile-picture">
+    <div
+      onClick={onClick}
+      className="profile-picture fixed z-50 size-[46vh] top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center"
+    >
       <SplitText
-        LetterWrapper={({ children }) => (
-          <CircleLetter>{children}</CircleLetter>
+        className="absolute circle-text h-full"
+        LetterWrapper={({ countIndex, children }) => (
+          <CircleLetter countIndex={countIndex}>{children}</CircleLetter>
         )}
       >
-        Test
+        CONTACT ME!
       </SplitText>
       <Image
         width={500}

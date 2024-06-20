@@ -38,8 +38,8 @@ export default function Journey() {
             src={"/frenchMap.svg"}
             className="map max-w-[50vw] h-full bg-black/80 rounded-xl"
           />
-          <Carousel display="slider" vertical={false}>
-            <Carousel.Item src="/logo-agrosup.svg" alt="Agrosup" />
+          <Carousel display="sequential">
+            <Carousel.Item> test</Carousel.Item>
             <Carousel.Item src="/logo-ensiacet.png" alt="Ensiacet" />
             <Carousel.Item src="/logo-la-capsule.svg" alt="La Capsule" />
             <Carousel.Item src="/logo-isipca.png" alt="ISIPCA" />
