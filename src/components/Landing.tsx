@@ -1,11 +1,12 @@
+import { forwardRef } from "react";
 import Image from "next/image";
-import { LetterWrapperProp, SplitText } from "@cyriacbr/react-split-text";
 
+import { LetterWrapperProp, SplitText } from "@cyriacbr/react-split-text";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import AnimatedLetter from "@/components/AnimatedLetter";
 
-export default function Landing() {
+function Landing(_: any, ref: any) {
   useGSAP(() => {
     gsap.from(".landing-page", {
       opacity: 0,
@@ -53,10 +54,13 @@ export default function Landing() {
     });
   });
   return (
-    <div className="font-[Prompt] text-[#CBB083] h-screen bg-[#495c78] flex flex-col items-center justify-end landing-page">
+    <div
+      ref={ref}
+      className="h-screen bg-[#495c78] flex flex-col items-center justify-end overflow-hidden landing-page"
+    >
       <div className="h-1/2">
         <SplitText
-          className="text-8xl font-['Rubik_Mono_One'] font-normal p-5 border-4 border-[#CBB083] text-center main-title"
+          className="text-8xl font-['Rubik_Mono_One'] font-normal p-5 border-4 border-[#CBB083] rounded text-center main-title"
           LetterWrapper={({ children }: LetterWrapperProp) => (
             <AnimatedLetter>{children}</AnimatedLetter>
           )}
@@ -77,3 +81,5 @@ export default function Landing() {
     </div>
   );
 }
+
+export default forwardRef(Landing);
