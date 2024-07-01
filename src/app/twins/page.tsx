@@ -31,8 +31,9 @@ export default function Twins() {
             The objective was to compare one flavor formula against the entire
             MANE portfolio to check whether there was something similar already
             existing. <br />
-            It allowed flavorists to avoid repetitions and improve the selection
-            of existing flavors by suggesting close alternatives when needed.
+            It allowed flavourists to avoid repetitions and improve the
+            selection of existing flavors by suggesting close alternatives when
+            needed.
             <br />
             The project then evolved so that the app could accept a list of
             hundreds of formulas to cluster them by aroma using AI techniques.

@@ -16,7 +16,6 @@ import Journey from "@/components/Journey";
 import Portfolio from "@/components/Portfolio";
 import AboutMe from "@/components/AboutMe";
 import Contact from "@/components/Contact";
-import { useRouter } from "next/router";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
