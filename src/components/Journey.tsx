@@ -206,12 +206,12 @@ export default function Journey() {
                 <p>
                   Specializing in physics and chemistry, this program aimed to
                   provide the fundamental knowledge necessary to excel in
-                  competitive examinations for admission to one of
-                  France`&apos;`s top engineering school <br /> <br /> It
-                  constituted the most demanding part of my education, teaching
-                  me how to thrive under pressure and emphasizing the importance
-                  of collaboration. <br /> <br /> Ultimately, I ranked 916th out
-                  of approximately 5000 students in the chemistry engineering
+                  competitive examinations for admission to one of France&apos;s
+                  top engineering school <br /> <br /> It constituted the most
+                  demanding part of my education, teaching me how to thrive
+                  under pressure and emphasizing the importance of
+                  collaboration. <br /> <br /> Ultimately, I ranked 916th out of
+                  approximately 5000 students in the chemistry engineering
                   schools entrance exam, propelling me towards the next
                   milestone of my journey : Toulouse
                 </p>
@@ -270,12 +270,12 @@ export default function Journey() {
                 <p>
                   After our first successful collaboration, MANE decided to
                   sponsor the next step of my career path : attending ISIPCA one
-                  of the world`&apos;`s most renown school for training
-                  perfumers and flavourists. This training was divided between
-                  part-time schooling and part-time apprenticeship as a
-                  flavourist with MANE. <br /> <br /> This experience taught me
-                  how to thrive in a company environment while also focusing on
-                  becoming a skilled flavourist.
+                  of the world&apos;s most renown school for training perfumers
+                  and flavourists. This training was divided between part-time
+                  schooling and part-time apprenticeship as a flavourist with
+                  MANE. <br /> <br /> This experience taught me how to thrive in
+                  a company environment while also focusing on becoming a
+                  skilled flavourist.
                 </p>
               </JourneyCard>
             </Carousel.Item>
@@ -302,7 +302,7 @@ export default function Journey() {
                   Learning on my own to automate some tasks, so R&D asked me to
                   manage the development of new tools to improve R&D efficiency
                   which ended up in the projects you can see in the
-                  `&quot;`Portfolio`&quot;` Section <br /> <br />I enjoyed
+                  &quot;Portfolio&quot; Section <br /> <br />I enjoyed
                   developing these tools so much that I decided I should code
                   for a living, which led me to join La Capsule
                 </p>
@@ -317,7 +317,7 @@ export default function Journey() {
                 occupation="Fullstack web and mobile development bootcamp"
               >
                 <p>
-                  Six years after being done with school, it`&apos;`s time to go
+                  Six years after being done with school, it&apos;s time to go
                   back in. <br /> I had the opportunity to develop basic web
                   applications in my previous experiences and fell in love with
                   it. <br /> So I quit my job to get the knowledge I lacked
@@ -325,7 +325,7 @@ export default function Journey() {
                   Government from La Capsule. <br /> <br />
                   We perfected the use of the MERN Stack (Mongo DB, Express.js,
                   React with Next.js, Node.js)
-                  <br />I even won the `&quot;`Kata Night`&quot;` contest, a
+                  <br />I even won the &quot;Kata Night&quot; contest, a
                   competition of algorithm exercices that we won with a
                   classmate against all La Capsule students
                 </p>
@@ -350,7 +350,7 @@ export default function Journey() {
                   - my experience in the industry,
                   <br />
                   - my original approach as I did not follow a
-                  `&quot;`classic`&quot;` path to become developer
+                  &quot;classic&quot; path to become developer
                   <br /> <br />
                   Contact me from the next section
                 </p>

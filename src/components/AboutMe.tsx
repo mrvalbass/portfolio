@@ -51,12 +51,12 @@ export default function AboutMe() {
         </div>
         <div className="flex flex-col gap-10 basis-[37.5%]">
           <div className="text-justify bg-[#495c78] p-5 rounded-lg border-2 border-[#CBB083]">
-            Hi there ! I`&apos;`m Valentin 😊 <br /> I used to be a chemical
+            Hi there ! I&apos;m Valentin 😊 <br /> I used to be a chemical
             engineer working in the field of food flavourings and I underwent a
             professional transition in 2024 to work in the Web Development
             field. <br />
-            Find more information about my education/career in the `&quot;`My
-            Journey`&quot;` section
+            Find more information about my education/career in the &quot;My
+            Journey&quot; section
           </div>
           <div className="flex grow gap-10">
             <div className="basis-1/2 hover:basis-full duration-200 relative">
@@ -105,7 +105,7 @@ export default function AboutMe() {
             </div>
           </div>
           <div className="text-justify bg-[#495c78] p-5 rounded-lg border-2 border-[#CBB083] basis-1/6 flex justify-center items-center">
-            On my free time, I`&apos;`m a bass and drum player, and I also like
+            On my free time, I&apos;m a bass and drum player, and I also like
             hitting the CrossFit Gym
           </div>
         </div>
