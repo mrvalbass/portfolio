@@ -1,4 +1,3 @@
-import { SplitText } from "@cyriacbr/react-split-text";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
@@ -65,14 +64,13 @@ export default function ProfilePicture({ onClick }: ProfilePictureProps) {
       onClick={onClick}
       className="profile-picture fixed size-[20vh] top-[10vh] md:top-0 md:size-[46vh] md:right-1/2 md:translate-x-1/2 flex items-center justify-center cursor-pointer z-20 "
     >
-      <SplitText
-        className="absolute circle-text h-full"
-        LetterWrapper={({ countIndex, children }) => (
-          <CircleLetter countIndex={countIndex}>{children}</CircleLetter>
-        )}
-      >
-        CONTACT ME!
-      </SplitText>
+      <div className="absolute circle-text h-full">
+        {"CONTACT ME!".split("").map((letter, i) => (
+          <CircleLetter key={i} countIndex={i}>
+            {letter}
+          </CircleLetter>
+        ))}
+      </div>
       <Image
         width={500}
         height={500}

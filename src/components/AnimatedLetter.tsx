@@ -3,11 +3,7 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 gsap.registerPlugin(useGSAP);
 
-interface AnimatedLetterProps {
-  children?: React.ReactNode;
-}
-
-const AnimatedLetter: React.FC<AnimatedLetterProps> = ({ children }) => {
+const AnimatedLetter: React.FC<React.PropsWithChildren> = ({ children }) => {
   useGSAP(() => {
     gsap.fromTo(
       ".title-letter",
@@ -16,8 +12,7 @@ const AnimatedLetter: React.FC<AnimatedLetterProps> = ({ children }) => {
     );
   });
 
-  return (
-    <span className=" title-letter inline-block relative">{children}</span>
-  );
+  return <span className="title-letter inline-block relative">{children}</span>;
 };
+
 export default AnimatedLetter;

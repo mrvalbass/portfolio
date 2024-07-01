@@ -1,7 +1,6 @@
-import { forwardRef } from "react";
+import React, { forwardRef } from "react";
 import Image from "next/image";
 
-import { LetterWrapperProp, SplitText } from "@cyriacbr/react-split-text";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import AnimatedLetter from "@/components/AnimatedLetter";
@@ -59,14 +58,14 @@ function Landing(_: any, ref: any) {
       className="h-screen bg-[#495c78] flex flex-col items-center justify-center md:justify-end landing-page"
     >
       <div className="md:h-1/2">
-        <SplitText
-          className="text-2xl md:text-8xl font-['Rubik_Mono_One'] font-normal p-5 border-4 border-[#CBB083] rounded text-center main-title"
-          LetterWrapper={({ children }: LetterWrapperProp) => (
-            <AnimatedLetter>{children}</AnimatedLetter>
-          )}
-        >
-          VALENTIN GUILLOT
-        </SplitText>
+        <div className="text-2xl md:text-8xl font-['Rubik_Mono_One'] font-normal p-5 border-4 border-[#CBB083] rounded text-center main-title">
+          {"VALENTIN".split("").map((letter, i) => (
+            <AnimatedLetter key={i}>{letter}</AnimatedLetter>
+          ))}{" "}
+          {"GUILLOT".split("").map((letter, i) => (
+            <AnimatedLetter key={i}>{letter}</AnimatedLetter>
+          ))}
+        </div>
         <h2 className="text-xl md:text-5xl font-bold text-end pt-[2vh] md:pt-[5vh] subtitle">
           Full Stack Web Developer
         </h2>
