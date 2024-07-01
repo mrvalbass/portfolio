@@ -14,7 +14,7 @@ const CircleLetter: React.FC<AnimatedLetterProps> = ({
 }) => {
   return (
     <div
-      className={`circle-letter font-['Rubik_Mono_One'] text-6xl h-[23vh] left-1/2 -translate-x-1/2 absolute`}
+      className={`circle-letter font-['Rubik_Mono_One'] text-2xl md:text-6xl h-[15vh] md:h-[23vh] md:left-1/2 md:-translate-x-1/2 absolute`}
       style={{
         transform: `translateX(-50%)  rotate(${
           countIndex ? (countIndex * 360) / 12 : 0

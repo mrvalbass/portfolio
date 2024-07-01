@@ -59,8 +59,10 @@ export default function Journey() {
     <div className="h-screen bg-cover justify-center relative journey">
       <div className="absolute h-[150vh] w-full bg-[url('/background.jpg')] bg-cover justify-center -z-10 background-journey"></div>
       <div className="flex flex-col backdrop-blur-sm bg-black/30 h-screen p-5">
-        <h1 className="font-bold text-5xl mb-5">MY JOURNEY</h1>
-        <div className="flex gap-5 grow min-h-0">
+        <h1 className="font-bold text-2xl before:md:text-5xl mb-5">
+          MY JOURNEY
+        </h1>
+        <div className="flex flex-col md:flex-row gap-5 grow min-h-0">
           <div className="map w-full max-h-full bg-black/80  rounded-xl">
             <svg viewBox="0 0 500 500" className="absolute h-full w-full ">
               <g className="car">

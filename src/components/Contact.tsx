@@ -9,7 +9,7 @@ function Contact(_: any, ref: any) {
       className="h-screen bg-[#495c78] p-5 flex flex-col"
       id="contact"
     >
-      <h1 className="font-bold text-5xl">CONTACT</h1>
+      <h1 className="font-bold text-2xl md:text-5xl">CONTACT</h1>
       <div className="grow flex flex-col justify-center items-center gap-5">
         <ContactForm />
         <ContactOptions />

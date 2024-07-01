@@ -56,18 +56,18 @@ function Landing(_: any, ref: any) {
   return (
     <div
       ref={ref}
-      className="h-screen bg-[#495c78] flex flex-col items-center justify-end overflow-hidden landing-page"
+      className="h-screen bg-[#495c78] flex flex-col items-center justify-center md:justify-end landing-page"
     >
-      <div className="h-1/2">
+      <div className="md:h-1/2">
         <SplitText
-          className="text-8xl font-['Rubik_Mono_One'] font-normal p-5 border-4 border-[#CBB083] rounded text-center main-title"
+          className="text-2xl md:text-8xl font-['Rubik_Mono_One'] font-normal p-5 border-4 border-[#CBB083] rounded text-center main-title"
           LetterWrapper={({ children }: LetterWrapperProp) => (
             <AnimatedLetter>{children}</AnimatedLetter>
           )}
         >
           VALENTIN GUILLOT
         </SplitText>
-        <h2 className="text-5xl font-bold z-10 text-end pt-[5vh] subtitle">
+        <h2 className="text-xl md:text-5xl font-bold text-end pt-[2vh] md:pt-[5vh] subtitle">
           Full Stack Web Developer
         </h2>
       </div>

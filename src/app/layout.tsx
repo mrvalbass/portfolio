@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="overflow-hidden">
+      <body className="md:overflow-hidden">
         <SmoothScroll>{children}</SmoothScroll>
       </body>
     </html>

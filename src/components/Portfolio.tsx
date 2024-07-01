@@ -108,39 +108,42 @@ export default function Portfolio() {
 
   const mobileProjects = [
     {
-      name: "E",
-      img: "/aboutMe1.jpg",
-      alt: "About Me 1",
+      name: "Concept360 Mobile",
+      img: "/concept360-mobile.png",
+      alt: "Concept360 Mobile Screenshot",
       fit: "cover",
-      link: "#",
-      technoIcons: [faHtml5],
+      link: "/concept360-mobile",
+      technoIcons: [faJs, faReact, faNodeJs],
     },
     {
-      name: "E",
-      img: "/aboutMe1.jpg",
-      alt: "About Me 1",
+      name: "Food App",
+      img: "/foodapp.png",
+      alt: "Food App Screenshot",
       fit: "cover",
-      link: "#",
-      technoIcons: [faHtml5],
+      link: "/foodapp",
+      technoIcons: [faJs, faReact],
     },
     {
-      name: "E",
-      img: "/aboutMe1.jpg",
-      alt: "About Me 1",
+      name: "Locapic",
+      img: "/locapic.png",
+      alt: "Locapic Screenshot",
       fit: "cover",
-      link: "#",
-      technoIcons: [faHtml5],
+      link: "/locapic",
+      technoIcons: [faJs, faReact],
     },
   ];
   return (
-    <div id="portfolio" className="h-screen justify-center relative portfolio">
+    <div
+      id="portfolio"
+      className="md:h-screen justify-center relative portfolio"
+    >
       <div className="absolute h-[150vh] w-full bg-[url('/background.jpg')] bg-cover justify-center -z-10 background-portfolio"></div>
-      <div className="flex flex-col backdrop-blur-sm bg-black/30 h-screen p-5">
-        <h1 className="font-bold text-5xl">PORTFOLIO</h1>
-        <div className="grow flex">
+      <div className="flex flex-col backdrop-blur-sm bg-black/30 md:h-screen p-5">
+        <h1 className="font-bold text-2xl md:text-5xl">PORTFOLIO</h1>
+        <div className="grow flex flex-col md:flex-row">
           <div className="basis-3/4 flex flex-col p-5">
             <h2 className="font-bold text-lg pb-5">WEB PROJECTS</h2>
-            <div className="grid grid-cols-3 gap-10 grow">
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-10 grow">
               {webProjects.map((project, i) => (
                 <Project
                   key={i}
@@ -167,7 +170,6 @@ export default function Portfolio() {
                   fit={project.fit}
                   projectName={project.name}
                   projectLink={project.link}
-                  target={project.target}
                   technoIcons={project.technoIcons}
                 />
               ))}

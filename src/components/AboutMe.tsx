@@ -1,21 +1,7 @@
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
 export default function AboutMe() {
-  useGSAP(() => {
-    gsap.to(".background-about-me", {
-      scrollTrigger: {
-        trigger: ".about-me",
-        scrub: 0.3,
-        start: "top bottom",
-        end: "bottom top",
-      },
-      y: "-20%",
-    });
-  });
-
   const softSkills = [
     "CURIOUS",
     "AUTONOMOUS",
@@ -28,9 +14,9 @@ export default function AboutMe() {
 
   return (
     <div className="bg-[#495c78] flex flex-col h-screen about-me">
-      <h1 className="font-bold text-5xl p-5">ABOUT ME</h1>
+      <h1 className="font-bold text-2xl md:text-5xl p-5">ABOUT ME</h1>
       <Marquee
-        className="border-y-8 border-[#CBB083] flex gap-10 font-['Rubik_Mono_One'] text-4xl py-5 bg-black/50"
+        className=" border-y-4 md:border-y-8 border-[#CBB083] flex gap-10 font-['Rubik_Mono_One'] text-2xl md:text-4xl py-5 bg-black/50"
         speed={100}
         pauseOnHover
       >
