@@ -14,11 +14,6 @@
   dependencies:
     regenerator-runtime "^0.14.0"
 
-"@cyriacbr/react-split-text@^1.0.0":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@cyriacbr/react-split-text/-/react-split-text-1.0.0.tgz#4c6336d402b828216ff738ab179e7313b649f385"
-  integrity sha512-WkD88+LjOx1vWVI0hh6flUtnplGnxL7zE1SYFbEFfG0gvAJ3SERwtBqtQV8NoOKNd2dZr/GrfK0sBh460IvtHQ==
-
 "@darkroom.engineering/tempus@^0.0.46":
   version "0.0.46"
   resolved "https://registry.yarnpkg.com/@darkroom.engineering/tempus/-/tempus-0.0.46.tgz#3d958807503e4055fcc4a1aeeff83ca0546c62f0"
