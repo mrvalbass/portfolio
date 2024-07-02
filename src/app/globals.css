@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+.test * {
+  border: 1px red solid;
+}
+
 .main-title {
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
 }

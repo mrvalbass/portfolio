@@ -43,7 +43,7 @@ export default function Project({
       target={target}
       className="relative rounded-xl hover:scale-105 active:scale-95 duration-200 opacity-0 h-[15svh] md:h-auto project"
     >
-      <div className="absolute z-10 bg-black/70 rounded-xl h-full w-full flex flex-col gap-5 justify-center items-center md:opacity-0 md:hover:opacity-100 duration-200">
+      <div className="absolute z-10 bg-black/60 rounded-xl h-full w-full flex flex-col gap-5 justify-center items-center md:opacity-0 md:hover:opacity-100 duration-200">
         <div className="flex items-center gap-5 relative">
           <h2 className="text-2xl font-bold">{projectName}</h2>
           <FontAwesomeIcon
