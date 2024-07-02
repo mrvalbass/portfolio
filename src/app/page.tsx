@@ -6,9 +6,6 @@ import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import MotionPathPlugin from "gsap/MotionPathPlugin";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowUp } from "@fortawesome/free-solid-svg-icons";
-
 import ProgressionBar from "@/components/ProgressionBar";
 import ProfilePicture from "@/components/ProfilePicture";
 import Landing from "@/components/Landing";
@@ -16,6 +13,7 @@ import Journey from "@/components/Journey";
 import Portfolio from "@/components/Portfolio";
 import AboutMe from "@/components/AboutMe";
 import Contact from "@/components/Contact";
+import TopArrow from "@/components/TopArrow";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -37,18 +35,7 @@ export default function Home() {
   }, []);
 
   useGSAP(() => {
-    if (!loading) {
-      gsap.from(".whole-site", { opacity: 0 });
-      gsap.to(".arrow-up", {
-        scrollTrigger: {
-          trigger: ".landing-page",
-          scrub: 0.3,
-          start: "10% top",
-          end: "50% top",
-        },
-        opacity: 1,
-      });
-    }
+    gsap.from(".whole-site", { opacity: 0 });
   });
 
   if (loading)
@@ -66,14 +53,7 @@ export default function Home() {
           contactRef.current?.scrollIntoView({ behavior: "smooth" });
         }}
       />
-      <FontAwesomeIcon
-        icon={faArrowUp}
-        className="arrow-up cursor-pointer fixed z-50 bottom-5 left-5 opacity-0 hover:scale-110 active:scale-95"
-        size="2x"
-        onClick={() => {
-          landingRef.current?.scrollIntoView({ behavior: "smooth" });
-        }}
-      />
+      <TopArrow refTarget={landingRef} />
       <Landing ref={landingRef} />
       <Portfolio />
       <AboutMe />

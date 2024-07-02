@@ -1,11 +1,187 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Image from "next/image";
-import { Carousel } from "react-daisyui";
 import JourneyCard from "./JourneyCard";
+import Carousel from "./Carousel";
 
 export default function Journey() {
+  const journeySteps = [
+    {
+      imgSrc: "/logo-la-martinière-monplaisir.png",
+      imgAlt: "Logo La Martinière Monplaisir",
+      place: "La Martinière Monplaisir",
+      city: "LYON / 2012-2014",
+      occupation: "Preparatory classes for engineering school",
+      desc: (
+        <p>
+          Specializing in physics and chemistry, this program aimed to provide
+          the fundamental knowledge necessary to excel in competitive
+          examinations for admission to one of France&apos;s top engineering
+          school <br /> <br /> It constituted the most demanding part of my
+          education, teaching me how to thrive under pressure and emphasizing
+          the importance of collaboration. <br /> <br /> Ultimately, I ranked
+          916th out of approximately 5000 students in the chemistry engineering
+          schools entrance exam, propelling me towards the next milestone of my
+          journey : Toulouse
+        </p>
+      ),
+    },
+    {
+      imgSrc: "/logo-ensiacet.png",
+      imgAlt: "Logo ENSIACET",
+      place: "ENSIACET",
+      city: "TOULOUSE / 2014-2016",
+      occupation:
+        "Chemistry engineering school - Organic chemistry specialization",
+      desc: (
+        <p>
+          Engineering school taught me organic chemistry and began shaping my
+          career path. It led me to the discovery of the food flavour chemistry,
+          a field where the results of your experiments are immediately
+          observable through smell and taste, offering the fulfillment I seek in
+          my work. <br />
+          <br /> With this career path defined, I sought to deepen my
+          understanding of general food chemistry. This led me to pursue my
+          final training year in Dijon <br /> <br /> PS: I also stumbled upon
+          programming for the first time here (VBA). It was so enjoyable and
+          immediately rewarding that the idea of pursuing a career in the field,
+          some day, sparked in my mind
+        </p>
+      ),
+    },
+    {
+      imgSrc: "/logo-agrosup.svg",
+      imgAlt: "Logo AgroSup Dijon",
+      place: "L'institut Agro",
+      city: "DIJON / 2016-2017",
+      occupation:
+        "Agro-food engineering school - Specialization in food formulation",
+      desc: (
+        <p>
+          At the intersection of industrial food formulation, food physical
+          chemistry, culinary arts and sensory analytics, my training at AGROSUP
+          provided me, through several long projects through the year, how to
+          organize projects and the tools at our disposal to do so. <br />{" "}
+          <br /> It ended in a 6 month internship as a flavourist intern in MANE
+          which was the beginning of a longer collaboration.
+        </p>
+      ),
+    },
+    {
+      imgSrc: "/logo-isipca.png",
+      imgAlt: "Logo ISIPCA",
+      place: "ISIPCA",
+      city: "VERSAILLES / 2017-2018",
+      occupation: "Flavourist Professional Master's degree",
+      desc: (
+        <p>
+          After our first successful collaboration, MANE decided to sponsor the
+          next step of my career path : attending ISIPCA one of the world&apos;s
+          most renown school for training perfumers and flavourists. This
+          training was divided between part-time schooling and part-time
+          apprenticeship as a flavourist with MANE. <br /> <br /> This
+          experience taught me how to thrive in a company environment while also
+          focusing on becoming a skilled flavourist.
+        </p>
+      ),
+    },
+    {
+      imgSrc: "/logo-mane.svg",
+      imgAlt: "Logo MANE",
+      place: "V. MANE Fils",
+      city: "LE BAR-SUR-LOUP / 2018-2024",
+      occupation: "Flavourist in charge of the Savoury Formula Management",
+      desc: (
+        <p>
+          After training me in the last years of my education, MANE investment
+          in me lead to a job offer. I became savoury formula management
+          flavourist. <br /> <br />
+          My job was to ensure that no matter the crisis affecting our products,
+          our clients were getting what they ordered. We were always working
+          under the pressure of the latest crisis and we had to always be
+          innovative to solve the problems we were facing. <br /> Being at the
+          crossroads of R&D, Purchasing, Regulatory and Production, I was given
+          the responsibility of managing the raw material library for savoury
+          formulation.
+          <br /> Finally, I learned Python and a little bit of Machine Learning
+          on my own to automate some tasks, so R&D asked me to manage the
+          development of new tools to improve R&D efficiency which ended up in
+          the projects you can see in the &quot;Portfolio&quot; Section <br />{" "}
+          <br />I enjoyed developing these tools so much that I decided I should
+          code for a living, which led me to join La Capsule
+        </p>
+      ),
+    },
+    {
+      imgSrc: "/logo-la-capsule.svg",
+      imgAlt: "Logo La Caspule",
+      place: "La Capsule",
+      city: "NICE / 2024",
+      occupation: "Fullstack web and mobile development bootcamp",
+      desc: (
+        <p>
+          Six years after being done with school, it&apos;s time to go back in.{" "}
+          <br /> I had the opportunity to develop basic web applications in my
+          previous experiences and fell in love with it. <br /> So I quit my job
+          to get the knowledge I lacked then, along with a certification
+          recognized by the French Government from La Capsule. <br /> <br />
+          We perfected the use of the MERN Stack (Mongo DB, Express.js, React
+          with Next.js, Node.js)
+          <br />I even won the &quot;Kata Night&quot; contest, a competition of
+          algorithm exercices that we won with a classmate against all La
+          Capsule students
+        </p>
+      ),
+    },
+    {
+      imgSrc: "/your-company.svg",
+      imgAlt: "Pointing finger",
+      place: "Your Company",
+      city: "ANNECY or GENEVA / 2024-",
+      occupation: "Fullstack web and/or mobile developer",
+      desc: (
+        <p>
+          I am looking for the company that will open its doors to the asset I
+          represent. <br /> <br /> Aside from my development skills, you would
+          benefit from :<br />
+          - my innovative problem-solving skills,
+          <br />
+          - my engineering training,
+          <br />
+          - my experience in the industry,
+          <br />
+          - my original approach as I did not follow a &quot;classic&quot; path
+          to become developer
+          <br /> <br />
+          Contact me from the next section
+        </p>
+      ),
+    },
+  ];
+
   useGSAP(() => {
+    const mm = gsap.matchMedia();
+    mm.add(`(min-width: 768px)`, () => {
+      gsap.from(".map", {
+        scrollTrigger: {
+          trigger: ".journey",
+          scrub: 1,
+          start: "top bottom",
+          end: "70% bottom",
+        },
+        x: "-100%",
+      });
+      gsap.from(".mycarousel", {
+        scrollTrigger: {
+          trigger: ".journey",
+          scrub: 1,
+          start: "top bottom",
+          end: "70% bottom",
+        },
+        x: "100%",
+      });
+    });
+
     gsap.to(".background-journey", {
       scrollTrigger: {
         trigger: ".journey",
@@ -14,24 +190,6 @@ export default function Journey() {
         end: "bottom top",
       },
       y: "-20%",
-    });
-    gsap.from(".map", {
-      scrollTrigger: {
-        trigger: ".journey",
-        scrub: 1,
-        start: "top bottom",
-        end: "70% bottom",
-      },
-      x: "-100%",
-    });
-    gsap.from(".carousel", {
-      scrollTrigger: {
-        trigger: ".journey",
-        scrub: 1,
-        start: "top bottom",
-        end: "70% bottom",
-      },
-      x: "100%",
     });
     gsap.set(".car", {
       scaleX: -1,
@@ -56,14 +214,14 @@ export default function Journey() {
   });
 
   return (
-    <div className="h-screen bg-cover justify-center relative journey">
-      <div className="absolute h-[150vh] w-full bg-[url('/background.jpg')] bg-cover justify-center -z-10 background-journey"></div>
-      <div className="flex flex-col backdrop-blur-sm bg-black/30 h-screen p-5">
+    <div className="md:h-screen bg-cover justify-center relative journey">
+      <div className="absolute h-[150%] w-full bg-[url('/background.jpg')] bg-cover justify-center -z-10 background-journey"></div>
+      <div className="flex flex-col backdrop-blur-sm bg-black/30 md:h-screen p-5">
         <h1 className="font-bold text-2xl before:md:text-5xl mb-5">
           MY JOURNEY
         </h1>
         <div className="flex flex-col md:flex-row gap-5 grow min-h-0">
-          <div className="map w-full max-h-full bg-black/80  rounded-xl">
+          <div className="map basis-1/2 max-h-full bg-black/80 relative rounded-xl">
             <svg viewBox="0 0 500 500" className="absolute h-full w-full ">
               <g className="car">
                 <path
@@ -193,171 +351,10 @@ export default function Journey() {
               className="h-full w-full "
             />
           </div>
-          <Carousel
-            display="sequential"
-            className="border-4 rounded-lg border-[#CBB083] bg-[#495c78] carousel"
-          >
-            <Carousel.Item className="lyon">
-              <JourneyCard
-                imgSrc="/logo-la-martinière-monplaisir.png"
-                imgAlt="Logo La Martinière Monplaisir"
-                place="La Martinière Monplaisir"
-                city="LYON / 2012-2014"
-                occupation="Preparatory classes for engineering school"
-              >
-                <p>
-                  Specializing in physics and chemistry, this program aimed to
-                  provide the fundamental knowledge necessary to excel in
-                  competitive examinations for admission to one of France&apos;s
-                  top engineering school <br /> <br /> It constituted the most
-                  demanding part of my education, teaching me how to thrive
-                  under pressure and emphasizing the importance of
-                  collaboration. <br /> <br /> Ultimately, I ranked 916th out of
-                  approximately 5000 students in the chemistry engineering
-                  schools entrance exam, propelling me towards the next
-                  milestone of my journey : Toulouse
-                </p>
-              </JourneyCard>
-            </Carousel.Item>
-            <Carousel.Item>
-              <JourneyCard
-                imgSrc="/logo-ensiacet.png"
-                imgAlt="Logo ENSIACET"
-                place="ENSIACET"
-                city="TOULOUSE / 2014-2016"
-                occupation="Chemistry engineering school - Organic chemistry specialization"
-              >
-                <p>
-                  Engineering school taught me organic chemistry and began
-                  shaping my career path. It led me to the discovery of the food
-                  flavour chemistry, a field where the results of your
-                  experiments are immediately observable through smell and
-                  taste, offering the fulfillment I seek in my work. <br />
-                  <br /> With this career path defined, I sought to deepen my
-                  understanding of general food chemistry. This led me to pursue
-                  my final training year in Dijon <br /> <br /> PS: I also
-                  stumbled upon programming for the first time here (VBA). It
-                  was so enjoyable and immediately rewarding that the idea of
-                  pursuing a career in the field, some day, sparked in my mind
-                </p>
-              </JourneyCard>
-            </Carousel.Item>
-            <Carousel.Item>
-              <JourneyCard
-                imgSrc="/logo-agrosup.svg"
-                imgAlt="Logo AgroSup Dijon"
-                place="L'institut Agro"
-                city="DIJON / 2016-2017"
-                occupation="Agro-food engineering school - Specialization in food formulation"
-              >
-                <p>
-                  At the intersection of industrial food formulation, food
-                  physical chemistry, culinary arts and sensory analytics, my
-                  training at AGROSUP provided me, through several long projects
-                  through the year, how to organize projects and the tools at
-                  our disposal to do so. <br /> <br /> It ended in a 6 month
-                  internship as a flavourist intern in MANE which was the
-                  beginning of a longer collaboration.
-                </p>
-              </JourneyCard>
-            </Carousel.Item>
-            <Carousel.Item>
-              <JourneyCard
-                imgSrc="/logo-isipca.png"
-                imgAlt="Logo ISIPCA"
-                place="ISIPCA"
-                city="VERSAILLES / 2017-2018"
-                occupation="Flavourist Professional Master's degree"
-              >
-                <p>
-                  After our first successful collaboration, MANE decided to
-                  sponsor the next step of my career path : attending ISIPCA one
-                  of the world&apos;s most renown school for training perfumers
-                  and flavourists. This training was divided between part-time
-                  schooling and part-time apprenticeship as a flavourist with
-                  MANE. <br /> <br /> This experience taught me how to thrive in
-                  a company environment while also focusing on becoming a
-                  skilled flavourist.
-                </p>
-              </JourneyCard>
-            </Carousel.Item>
-            <Carousel.Item>
-              <JourneyCard
-                imgSrc="/logo-mane.svg"
-                imgAlt="Logo MANE"
-                place="V. MANE Fils"
-                city="LE BAR-SUR-LOUP / 2018-2024"
-                occupation="Flavourist in charge of the Savoury Formula Management"
-              >
-                <p>
-                  After training me in the last years of my education, MANE
-                  investment in me lead to a job offer. I became savoury formula
-                  management flavourist. <br /> <br />
-                  My job was to ensure that no matter the crisis affecting our
-                  products, our clients were getting what they ordered. We were
-                  always working under the pressure of the latest crisis and we
-                  had to always be innovative to solve the problems we were
-                  facing. <br /> Being at the crossroads of R&D, Purchasing,
-                  Regulatory and Production, I was given the responsibility of
-                  managing the raw material library for savoury formulation.
-                  <br /> Finally, I learned Python and a little bit of Machine
-                  Learning on my own to automate some tasks, so R&D asked me to
-                  manage the development of new tools to improve R&D efficiency
-                  which ended up in the projects you can see in the
-                  &quot;Portfolio&quot; Section <br /> <br />I enjoyed
-                  developing these tools so much that I decided I should code
-                  for a living, which led me to join La Capsule
-                </p>
-              </JourneyCard>
-            </Carousel.Item>
-            <Carousel.Item>
-              <JourneyCard
-                imgSrc="/logo-la-capsule.svg"
-                imgAlt="Logo La Caspule"
-                place="La Capsule"
-                city="NICE / 2024"
-                occupation="Fullstack web and mobile development bootcamp"
-              >
-                <p>
-                  Six years after being done with school, it&apos;s time to go
-                  back in. <br /> I had the opportunity to develop basic web
-                  applications in my previous experiences and fell in love with
-                  it. <br /> So I quit my job to get the knowledge I lacked
-                  then, along with a certification recognized by the French
-                  Government from La Capsule. <br /> <br />
-                  We perfected the use of the MERN Stack (Mongo DB, Express.js,
-                  React with Next.js, Node.js)
-                  <br />I even won the &quot;Kata Night&quot; contest, a
-                  competition of algorithm exercices that we won with a
-                  classmate against all La Capsule students
-                </p>
-              </JourneyCard>
-            </Carousel.Item>
-            <Carousel.Item>
-              <JourneyCard
-                imgSrc="/your-company.svg"
-                imgAlt="Pointing finger"
-                place="Your Company"
-                city="ANNECY or GENEVA / 2024-"
-                occupation="Fullstack web and/or mobile developer"
-              >
-                <p>
-                  I am looking for the company that will open its doors to the
-                  asset I represent. <br /> <br /> Aside from my development
-                  skills, you would benefit from :<br />
-                  - my innovative problem-solving skills,
-                  <br />
-                  - my engineering training,
-                  <br />
-                  - my experience in the industry,
-                  <br />
-                  - my original approach as I did not follow a
-                  &quot;classic&quot; path to become developer
-                  <br /> <br />
-                  Contact me from the next section
-                </p>
-              </JourneyCard>
-            </Carousel.Item>
+          <Carousel className="mycarousel basis-1/2">
+            {journeySteps.map((step, i) => (
+              <JourneyCard {...step} key={i} countIndex={i} />
+            ))}
           </Carousel>
         </div>
       </div>

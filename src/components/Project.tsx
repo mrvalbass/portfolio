@@ -62,7 +62,7 @@ export default function Project({
       <Image
         src={imgSrc}
         alt={imgAlt}
-        layout="fill"
+        fill={true}
         className={`rounded-xl bg-black/70 object-${fit}`}
       />
     </Link>

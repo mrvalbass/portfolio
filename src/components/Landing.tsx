@@ -22,34 +22,38 @@ function Landing(_: any, ref: any) {
       repeat: -1,
       yoyo: true,
     });
-    gsap.to(".scroll-animation", {
-      scrollTrigger: {
-        trigger: ".landing-page",
-        scrub: 0.3,
-        start: "10% top",
-        end: "50% top",
-      },
-      opacity: 0,
-    });
-    gsap.to(".main-title", {
-      scrollTrigger: {
-        trigger: ".landing-page",
-        scrub: 0.3,
-        start: "10% top",
-        end: "50% top",
-      },
-      x: "-50%",
-      opacity: 0,
-    });
-    gsap.to(".subtitle", {
-      scrollTrigger: {
-        trigger: ".landing-page",
-        scrub: 0.3,
-        start: "10% top",
-        end: "50% top",
-      },
-      x: "50%",
-      color: "#495c78",
+
+    const mm = gsap.matchMedia();
+    mm.add(`(min-width: 768px)`, () => {
+      gsap.to(".scroll-animation", {
+        scrollTrigger: {
+          trigger: ".landing-page",
+          scrub: 0.3,
+          start: "10% top",
+          end: "50% top",
+        },
+        opacity: 0,
+      });
+      gsap.to(".main-title", {
+        scrollTrigger: {
+          trigger: ".landing-page",
+          scrub: 0.3,
+          start: "10% top",
+          end: "50% top",
+        },
+        x: "-50%",
+        opacity: 0,
+      });
+      gsap.to(".subtitle", {
+        scrollTrigger: {
+          trigger: ".landing-page",
+          scrub: 0.3,
+          start: "10% top",
+          end: "50% top",
+        },
+        x: "50%",
+        color: "#495c78",
+      });
     });
   });
   return (
