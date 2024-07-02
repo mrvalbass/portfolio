@@ -1,15 +1,7 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Project from "./Project";
-import {
-  faHtml5,
-  faPython,
-  faCss3,
-  faJs,
-  faNodeJs,
-  faReact,
-} from "@fortawesome/free-brands-svg-icons";
-
+import { mobileProjects, webProjects } from "@/app/data";
 export default function Portfolio() {
   useGSAP(() => {
     gsap.to(".background-portfolio", {
@@ -23,115 +15,6 @@ export default function Portfolio() {
     });
   });
 
-  const webProjects = [
-    {
-      name: "Concept 360",
-      img: "/concept360.png",
-      alt: "Concept 360 Screenshot",
-      fit: "cover",
-      target: "_blank",
-      link: "https://concept360-frontend-web.vercel.app/",
-      technoIcons: [faJs, faReact, faNodeJs],
-    },
-
-    {
-      name: "HackaTweet",
-      img: "/hackatweet.png",
-      alt: "Hackatweet Screenshot",
-      fit: "cover",
-      link: "https://hackatweet-front-five.vercel.app/",
-      target: "_blank",
-      technoIcons: [faJs, faReact, faNodeJs],
-    },
-    {
-      name: "My Moviz",
-      img: "/my-moviz.png",
-      alt: "My Moviz Screenshot",
-      fit: "cover",
-      link: "https://mymoviz-front-three.vercel.app/",
-      target: "_blank",
-      technoIcons: [faJs, faReact, faNodeJs],
-    },
-    {
-      name: "TicketHack",
-      img: "/tickethack.png",
-      alt: "TicketHack Screenshot",
-      fit: "cover",
-      link: "https://tickethack-front-iota.vercel.app/",
-      target: "_blank",
-      technoIcons: [faHtml5, faCss3, faJs, faNodeJs],
-    },
-    {
-      name: "Weather App",
-      img: "/weather-app.png",
-      alt: "Weather App Screenshot",
-      fit: "cover",
-      link: "https://weatherapp-frontend-nine-theta.vercel.app/",
-      target: "_blank",
-      technoIcons: [faHtml5, faCss3, faJs, faNodeJs],
-    },
-    {
-      name: "TWINS",
-      img: "/logo-mane.svg",
-      alt: "Mane logo",
-      fit: "contain",
-      link: "/twins",
-      technoIcons: [faHtml5, faCss3, faPython],
-    },
-    {
-      name: "FLAVOUR ANALYST",
-      img: "/logo-mane.svg",
-      alt: "Mane logo",
-      fit: "contain",
-      link: "/flavour-analyst",
-      technoIcons: [faHtml5, faCss3, faPython],
-    },
-    {
-      name: "Calculator",
-      img: "/calculator.png",
-      alt: "Calculator Screenshot",
-      fit: "cover",
-      link: "https://mrvalbass.github.io/odin-calculator/",
-      target: "_blank",
-      technoIcons: [faHtml5, faCss3, faJs],
-    },
-    {
-      name: "Rock Paper Scissors Game",
-      img: "/rock-paper-scissors.png",
-      alt: "Rock Paper Scissors Screenshot",
-      fit: "cover",
-      link: "https://mrvalbass.github.io/odin-rock_paper_scissors/",
-      target: "_blank",
-      technoIcons: [faHtml5, faCss3, faJs],
-    },
-  ];
-
-  const mobileProjects = [
-    {
-      name: "Concept360 Mobile",
-      img: "/concept360-mobile.png",
-      alt: "Concept360 Mobile Screenshot",
-      fit: "cover",
-      link: "/concept360-mobile",
-      technoIcons: [faJs, faReact, faNodeJs],
-    },
-    {
-      name: "Food App",
-      img: "/foodapp.png",
-      alt: "Food App Screenshot",
-      fit: "cover",
-      link: "/foodapp",
-      technoIcons: [faJs, faReact],
-    },
-    {
-      name: "Locapic",
-      img: "/locapic.png",
-      alt: "Locapic Screenshot",
-      fit: "cover",
-      link: "/locapic",
-      technoIcons: [faJs, faReact],
-    },
-  ];
   return (
     <div
       id="portfolio"
