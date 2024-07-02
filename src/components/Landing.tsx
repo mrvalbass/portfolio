@@ -59,7 +59,7 @@ function Landing(_: any, ref: any) {
   return (
     <div
       ref={ref}
-      className="h-[svh] md:h-screen bg-[#495c78] flex flex-col items-center justify-center md:justify-end landing-page"
+      className="h-[100svh] md:h-screen bg-[#495c78] flex flex-col items-center justify-center md:justify-end landing-page"
     >
       <div className="md:h-1/2">
         <div className="text-2xl md:text-8xl font-['Rubik_Mono_One'] font-normal p-5 border-4 border-[#CBB083] rounded text-center main-title">
