@@ -71,7 +71,7 @@ export default function ContactForm() {
         <input
           type="hidden"
           name="_next"
-          value="https://portfolio-steel-alpha-51.vercel.app/"
+          value="https://www.valentinguillot.fr"
         />
         <input type="hidden" name="_captcha" value="false" />
         <input
