@@ -28,6 +28,23 @@
   width: 10rem;
 }
 
-*::-webkit-scrollbar {
+/* @media (min-width: 768px) { */
+body::-webkit-scrollbar {
   display: none;
 }
+
+*::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: rgb(0, 0, 0, 0.5);
+}
+
+*::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #cbb083;
+}
+/* } */

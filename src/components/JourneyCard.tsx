@@ -39,7 +39,7 @@ export default function JourneyCard({
           {occupation}
         </p>
       </div>
-      <div className="overflow-auto">{desc}</div>
+      <div className="overflow-auto text-justify">{desc}</div>
     </div>
   );
 }
