@@ -61,7 +61,9 @@ export default function ContactForm() {
           type="submit"
           onClick={() => {
             if (name && email && message) {
-              router.replace("/");
+              setTimeout(() => {
+                router.replace("/");
+              }, 2000);
               setSubmit(
                 <span className="loading loading-ring loading-lg"></span>
               );
