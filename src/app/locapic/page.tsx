@@ -27,7 +27,7 @@ export default function Locapic() {
           <div className="border-2 border-[#CBB083]"></div>
           <p className="leading-relaxed">
             La Capsule&apos;s project to learn React Native and the use of
-            localisation, maps and mobile permissions <br />
+            localization, maps and mobile permissions. <br />
           </p>
           <div className="border-2 border-[#CBB083]"></div>
           <div>

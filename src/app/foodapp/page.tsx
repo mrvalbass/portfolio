@@ -27,7 +27,7 @@ export default function FoodApp() {
           <div className="border-2 border-[#CBB083]"></div>
           <p className="leading-relaxed">
             La Capsule&apos;s project to experiment with components and
-            navigation
+            navigation.
             <br />
           </p>
           <div className="border-2 border-[#CBB083]"></div>

@@ -25,11 +25,11 @@ export default function Twins() {
         <h1 className="text-center text-5xl font-bold">TWINS</h1>
         <div className="border-2 border-[#CBB083]"></div>
         <p className="leading-relaxed">
-          TWINS was the first software development project I got to work on.{" "}
+          TWINS was the first software development project I got to work on.
           <br />
           The objective was to compare one flavor formula against the entire
-          MANE portfolio to check whether there was something similar already
-          existing. <br />
+          MANE portfolio to check whether something similar already existed.
+          <br />
           It allowed flavourists to avoid repetitions and improve the selection
           of existing flavors by suggesting close alternatives when needed.
           <br />
@@ -40,7 +40,7 @@ export default function Twins() {
           <br />
           What made this project valuable was that the flavor formulas were
           compared based on their aroma and not on their composition, thanks to
-          a formula I designed.
+          an algorithm I designed.
           <br />
           At the moment, the project is being adapted to fit into the MANE IT
           ecosystem.

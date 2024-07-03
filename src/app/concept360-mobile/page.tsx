@@ -30,9 +30,9 @@ export default function Concept360() {
           <p className="leading-relaxed">
             The Concept 360 project aimed to develop a solution to ease the
             management of patients and programs for a health center. <br />
-            It came with two apps, one on the web for the specialists to manage
-            their programs and patients, and one on mobile for patients to
-            follow their programs
+            It included two apps: one on the web for specialists to manage their
+            programs and patients, and one on mobile for patients to follow
+            their programs.
           </p>
           <div className="border-2 border-[#CBB083]"></div>
           <div>

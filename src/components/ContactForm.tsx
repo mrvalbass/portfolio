@@ -1,3 +1,4 @@
+import { useRouter } from "next/router";
 import React, { useState } from "react";
 
 export default function ContactForm() {
@@ -5,6 +6,8 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [submit, setSubmit] = useState<React.ReactNode>("SUBMIT");
+
+  const router = useRouter();
 
   return (
     <form
@@ -58,6 +61,7 @@ export default function ContactForm() {
           type="submit"
           onClick={() => {
             if (name && email && message) {
+              router.replace("/");
               setSubmit(
                 <span className="loading loading-ring loading-lg"></span>
               );

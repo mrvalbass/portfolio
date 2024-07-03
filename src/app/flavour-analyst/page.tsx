@@ -26,12 +26,12 @@ export default function Twins() {
           <h1 className="text-center text-5xl font-bold">FLAVOUR ANALYST</h1>
           <div className="border-2 border-[#CBB083]"></div>
           <p className="leading-relaxed">
-            Following TWINS, FLAVOUR ANALYST has been developed to tackle a
-            recurring pain point of the Flavour R&D: the traduction of a
-            chemical analysis in a flavour formula.
+            Following TWINS, FLAVOUR ANALYST was developed to tackle a recurring
+            pain point in Flavour R&D: the traduction of a chemical analysis
+            into a flavour formula.
             <br />
             The application allowed flavourists to reduce the time spent on this
-            traduction by 50%.
+            translation by 50%.
           </p>
           <p>
             Since FLAVOUR ANALYST is a proprietary product of MANE, access to

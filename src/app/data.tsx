@@ -18,12 +18,12 @@ export const journeySteps = [
       <p>
         Specializing in physics and chemistry, this program aimed to provide the
         fundamental knowledge necessary to excel in competitive examinations for
-        admission to one of France&apos;s top engineering school <br /> <br />{" "}
+        admission to one of France&apos;s top engineering schools. <br /> <br />
         It constituted the most demanding part of my education, teaching me how
         to thrive under pressure and emphasizing the importance of
         collaboration. <br /> <br /> Ultimately, I ranked 916th out of
         approximately 5000 students in the chemistry engineering schools
-        entrance exam, propelling me towards the next milestone of my journey :
+        entrance exam, propelling me towards the next milestone of my journey:
         Toulouse
       </p>
     ),
@@ -38,16 +38,16 @@ export const journeySteps = [
     desc: (
       <p>
         Engineering school taught me organic chemistry and began shaping my
-        career path. It led me to the discovery of the food flavour chemistry, a
+        career path. It led me to the discovery of food flavour chemistry, a
         field where the results of your experiments are immediately observable
         through smell and taste, offering the fulfillment I seek in my work.{" "}
         <br />
         <br /> With this career path defined, I sought to deepen my
         understanding of general food chemistry. This led me to pursue my final
-        training year in Dijon <br /> <br /> PS: I also stumbled upon
+        training year in Dijon. <br /> <br /> PS: I also stumbled upon
         programming for the first time here (VBA). It was so enjoyable and
         immediately rewarding that the idea of pursuing a career in the field,
-        some day, sparked in my mind
+        someday, sparked in my mind
       </p>
     ),
   },
@@ -62,9 +62,9 @@ export const journeySteps = [
       <p>
         At the intersection of industrial food formulation, food physical
         chemistry, culinary arts and sensory analytics, my training at AGROSUP
-        provided me, through several long projects through the year, how to
+        taught me, through several long projects throughout the year, how to
         organize projects and the tools at our disposal to do so. <br /> <br />{" "}
-        It ended in a 6 month internship as a flavourist intern in MANE which
+        It ended in a six-month internship as a flavourist intern at MANE which
         was the beginning of a longer collaboration.
       </p>
     ),
@@ -78,12 +78,12 @@ export const journeySteps = [
     desc: (
       <p>
         After our first successful collaboration, MANE decided to sponsor the
-        next step of my career path : attending ISIPCA one of the world&apos;s
-        most renown school for training perfumers and flavourists. This training
-        was divided between part-time schooling and part-time apprenticeship as
-        a flavourist with MANE. <br /> <br /> This experience taught me how to
-        thrive in a company environment while also focusing on becoming a
-        skilled flavourist.
+        next step of my career path: attending ISIPCA one of the world&apos;s
+        most renowned school for training perfumers and flavourists. This
+        training was divided between part-time schooling and part-time
+        apprenticeship as a flavourist with MANE. <br /> <br /> This experience
+        taught me how to thrive in a company environment while also focusing on
+        becoming a skilled flavourist.
       </p>
     ),
   },
@@ -95,15 +95,15 @@ export const journeySteps = [
     occupation: "Flavourist in charge of the Savoury Formula Management",
     desc: (
       <p>
-        After training me in the last years of my education, MANE investment in
-        me lead to a job offer. I became savoury formula management flavourist.{" "}
-        <br /> <br />
-        My job was to ensure that no matter the crisis affecting our products,
-        our clients were getting what they ordered. We were always working under
-        the pressure of the latest crisis and we had to always be innovative to
-        solve the problems we were facing. <br /> Being at the crossroads of
-        R&D, Purchasing, Regulatory and Production, I was given the
-        responsibility of managing the raw material library for savoury
+        After training me in the last years of my education, MANE&apos;s
+        investment in me led to a job offer. I became savoury formula management
+        flavourist. <br /> <br />
+        My job was to ensure that regardless of the crises affecting our
+        products, our clients were getting what they ordered. We were always
+        working under the pressure of the latest crisis and we had to always be
+        innovative to solve the problems we were facing. <br /> Being at the
+        crossroads of R&D, Purchasing, Regulatory and Production, I was given
+        the responsibility of managing the raw material library for savoury
         formulation.
         <br /> Finally, I learned Python and a little bit of Machine Learning on
         my own to automate some tasks, so R&D asked me to manage the development
@@ -122,16 +122,16 @@ export const journeySteps = [
     occupation: "Fullstack web and mobile development bootcamp",
     desc: (
       <p>
-        Six years after being done with school, it&apos;s time to go back in.{" "}
+        Six years after finishing school, it&apos;s time to go back in.
         <br /> I had the opportunity to develop basic web applications in my
         previous experiences and fell in love with it. <br /> So I quit my job
         to get the knowledge I lacked then, along with a certification
         recognized by the French Government from La Capsule. <br /> <br />
-        We perfected the use of the MERN Stack (Mongo DB, Express.js, React with
-        Next.js, Node.js)
+        We perfected the use of the MERN Stack (MongoDB, Express.js, React with
+        Next.js, Node.js).
         <br />I even won the &quot;Kata Night&quot; contest, a competition of
-        algorithm exercices that we won with a classmate against all La Capsule
-        students
+        algorithm exercises that a classmate and I won against all La Capsule
+        students.
       </p>
     ),
   },
