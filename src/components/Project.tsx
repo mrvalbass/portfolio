@@ -63,6 +63,7 @@ export default function Project({
         src={imgSrc}
         alt={imgAlt}
         fill={true}
+        sizes="100%"
         className={`rounded-xl bg-black/70 object-${fit}`}
       />
     </Link>

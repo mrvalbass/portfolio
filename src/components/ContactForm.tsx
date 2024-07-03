@@ -1,17 +1,15 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
+  const [submit, setSubmit] = useState<React.ReactNode>("SUBMIT");
 
   return (
     <form
       action="https://formsubmit.co/vvm.guillot@gmail.com"
       method="POST"
-      // action={(formData) => {
-      //   console.log(formData.get("name"));
-      // }}
       className="w-3/4 max-w-[1000px] mt-2"
     >
       <fieldset className="border-4 rounded border-[#CBB083] bg-black/70 h-[75vh] px-4 py-8 flex flex-col justify-between gap-8">
@@ -24,6 +22,7 @@ export default function ContactForm() {
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="text-black bg-[#bdbdbd] text-base font-normal rounded p-1 placeholder:text-gray-600"
+            required
           />
         </label>
         <label
@@ -38,6 +37,7 @@ export default function ContactForm() {
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
             className="text-black bg-[#bdbdbd] text-base font-normal rounded p-1 placeholder:text-gray-600"
+            required
           />
         </label>
         <label
@@ -51,15 +51,28 @@ export default function ContactForm() {
             onChange={(e) => setMessage(e.target.value)}
             placeholder="How can I help ?"
             className="grow text-black bg-[#bdbdbd] text-base font-normal rounded p-1 placeholder:text-gray-600"
+            required
           ></textarea>
         </label>
-        <input
+        <button
           type="submit"
-          value="SUBMIT"
-          className="border-4 border-[#CBB083] rounded font-['Rubik_Mono_One'] text-xl self-center p-2 cursor-pointer duration-200 hover:bg-[#CBB083] hover:text-black/70 active:scale-75"
-        />
+          onClick={() => {
+            if (name && email && message) {
+              setSubmit(
+                <span className="loading loading-ring loading-lg"></span>
+              );
+            }
+          }}
+          className="flex justify-center items-center w-[200px] h-[75px] border-4 border-[#CBB083] rounded font-['Rubik_Mono_One'] text-xl self-center p-2 cursor-pointer duration-200 hover:bg-[#CBB083] hover:text-black/70 active:scale-75"
+        >
+          {submit}
+        </button>
         {/* Form Settings for formsubmit.co */}
-        <input type="hidden" name="_next" value="https://localhost:3000/" />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://portfolio-steel-alpha-51.vercel.app/"
+        />
         <input type="hidden" name="_captcha" value="false" />
         <input
           type="hidden"

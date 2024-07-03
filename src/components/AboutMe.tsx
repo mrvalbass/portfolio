@@ -32,6 +32,7 @@ export default function AboutMe() {
             src={"/aboutMe1.jpg"}
             alt="About me 1"
             fill={true}
+            sizes="100%"
             className="object-cover object-[15%_top] hover:object-[35%_top] rounded-xl duration-[5s]"
           />
         </div>
@@ -50,6 +51,7 @@ export default function AboutMe() {
                 src={"/aboutMe4.jpg"}
                 alt="About me 4"
                 fill={true}
+                sizes="100%"
                 className="object-cover object-[25%_top] rounded-xl"
               />
             </div>
@@ -58,6 +60,7 @@ export default function AboutMe() {
                 src={"/aboutMe3.jpg"}
                 alt="About me 3"
                 fill={true}
+                sizes="100%"
                 className="object-cover object-[40%_top] rounded-xl"
               />
             </div>
@@ -70,6 +73,7 @@ export default function AboutMe() {
                 src={"/aboutMe5.jpg"}
                 alt="About me 5"
                 fill={true}
+                sizes="100%"
                 className="object-cover object-[25%_top] rounded-xl"
               />
             </div>
@@ -78,6 +82,7 @@ export default function AboutMe() {
                 src={"/aboutMe6.jpg"}
                 alt="About me 6"
                 fill={true}
+                sizes="100%"
                 className="object-cover object-[40%_top] rounded-xl"
               />
             </div>
@@ -86,6 +91,7 @@ export default function AboutMe() {
                 src={"/aboutMe2.jpg"}
                 alt="About me 2"
                 fill={true}
+                sizes="100%"
                 className="object-cover object-[50%_top] rounded-xl"
               />
             </div>

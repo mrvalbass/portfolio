@@ -80,12 +80,12 @@ export default function ProfilePicture({ onClick }: ProfilePictureProps) {
         ))}
       </div>
       <Image
-        width={500}
-        height={500}
+        priority={true}
+        width={1000}
+        height={1000}
         alt="profile picture Valentin"
-        src={"/profilePicture.jpg"}
+        src={"/profilePicture.webp"}
         className="size-[12vh] md:size-[30vh] rounded-full object-cover border-4 border-[#CBB083]"
-        priority
       />
     </div>
   );

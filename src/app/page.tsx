@@ -35,8 +35,10 @@ export default function Home() {
   }, []);
 
   useGSAP(() => {
-    gsap.from(".whole-site", { opacity: 0 });
-  });
+    if (!loading) {
+      gsap.from(".whole-site", { opacity: 0 });
+    }
+  }, [loading]);
 
   if (loading)
     return (
