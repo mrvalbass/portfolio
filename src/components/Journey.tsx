@@ -62,7 +62,14 @@ export default function Journey() {
 
   return (
     <div className="md:h-screen bg-cover justify-center relative overflow-hidden journey">
-      <div className="absolute h-[150%] w-full bg-[url('/background.webp')] bg-cover justify-center -z-10 background-journey"></div>
+      <Image
+        priority
+        width={4000}
+        height={4000}
+        src="/background.webp"
+        alt="Background Image"
+        className="absolute h-[150%] w-full bg-cover justify-center -z-10 background-journey"
+      />
       <div className="flex flex-col backdrop-blur-sm bg-black/30 md:h-screen p-5">
         <h1 className="font-bold text-2xl md:text-5xl mb-5">MY JOURNEY</h1>
         <div className="flex flex-col md:flex-row gap-5 grow min-h-0">

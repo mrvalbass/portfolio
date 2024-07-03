@@ -2,6 +2,7 @@ import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import Project from "./Project";
 import { mobileProjects, webProjects } from "@/app/data";
+import Image from "next/image";
 export default function Portfolio() {
   useGSAP(() => {
     gsap.to(".background-portfolio", {
@@ -20,7 +21,14 @@ export default function Portfolio() {
       id="portfolio"
       className="md:h-screen justify-center relative portfolio"
     >
-      <div className="absolute h-[150%] w-full bg-[url('/background.webp')] bg-cover justify-center -z-10 background-portfolio"></div>
+      <Image
+        priority
+        width={4000}
+        height={4000}
+        src="/background.webp"
+        alt="Background Image"
+        className="absolute h-[150%] w-full bg-cover justify-center -z-10 background-portfolio"
+      />
       <div className="flex flex-col backdrop-blur-sm bg-black/30 md:h-screen p-5">
         <h1 className="font-bold text-2xl md:text-5xl">PORTFOLIO</h1>
         <div className="grow flex flex-col md:flex-row">
