@@ -61,7 +61,7 @@ export default function Journey() {
   });
 
   return (
-    <div className="md:h-screen bg-cover justify-center relative journey">
+    <div className="md:h-screen bg-cover justify-center relative overflow-x-hidden journey">
       <div className="absolute h-[150%] w-full bg-[url('/background.jpg')] bg-cover justify-center -z-10 background-journey"></div>
       <div className="flex flex-col backdrop-blur-sm bg-black/30 md:h-screen p-5">
         <h1 className="font-bold text-2xl before:md:text-5xl mb-5">
