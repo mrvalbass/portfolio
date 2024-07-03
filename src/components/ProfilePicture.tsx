@@ -84,7 +84,9 @@ export default function ProfilePicture({ onClick }: ProfilePictureProps) {
         width={1000}
         height={1000}
         alt="profile picture Valentin"
-        src={"/profilePicture.webp"}
+        src={
+          "https://res.cloudinary.com/dmftxzhvh/image/upload/w_1000,ar_1:1,c_fill,g_auto/v1720002565/profilePicture_qwixqx.webp"
+        }
         className="size-[12vh] md:size-[30vh] rounded-full object-cover border-4 border-[#CBB083]"
       />
     </div>
