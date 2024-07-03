@@ -14,6 +14,7 @@ import Portfolio from "@/components/Portfolio";
 import AboutMe from "@/components/AboutMe";
 import Contact from "@/components/Contact";
 import TopArrow from "@/components/TopArrow";
+import Image from "next/image";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);

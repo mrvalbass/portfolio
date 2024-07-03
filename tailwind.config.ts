@@ -9,6 +9,6 @@ const config: Config = {
     "node_modules/react-daisyui/dist/**/*.js",
   ],
   theme: {},
-  plugins: [],
+  plugins: [require("daisyui")],
 };
 export default config;
