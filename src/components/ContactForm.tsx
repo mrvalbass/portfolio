@@ -8,7 +8,7 @@ export default function ContactForm() {
 
   return (
     <form
-      action="https://formsubmit.co/vvm.guillot@gmail.com"
+      action="https://formsubmit.co/23e92fc3f9892d8d8f7566834e813c88 "
       method="POST"
       className="w-3/4 max-w-[1000px] mt-2"
     >
