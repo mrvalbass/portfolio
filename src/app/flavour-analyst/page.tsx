@@ -10,7 +10,7 @@ export default function Twins() {
       <div className="h-screen relative flex justify-center items-center">
         <div className="h-screen w-screen absolute bg-black/70 z-10"></div>
         <Image
-          src="/background.jpg"
+          src="/background.webp"
           alt="Twins landing page"
           layout="fill"
           className="object-cover"

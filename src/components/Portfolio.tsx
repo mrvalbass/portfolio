@@ -20,7 +20,7 @@ export default function Portfolio() {
       id="portfolio"
       className="md:h-screen justify-center relative portfolio"
     >
-      <div className="absolute h-[150%] w-full bg-[url('/background.jpg')] bg-cover justify-center -z-10 background-portfolio"></div>
+      <div className="absolute h-[150%] w-full bg-[url('/background.webp')] bg-cover justify-center -z-10 background-portfolio"></div>
       <div className="flex flex-col backdrop-blur-sm bg-black/30 md:h-screen p-5">
         <h1 className="font-bold text-2xl md:text-5xl">PORTFOLIO</h1>
         <div className="grow flex flex-col md:flex-row">
