@@ -14,7 +14,6 @@ import Portfolio from "@/components/Portfolio";
 import AboutMe from "@/components/AboutMe";
 import Contact from "@/components/Contact";
 import TopArrow from "@/components/TopArrow";
-import Image from "next/image";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
@@ -29,7 +28,7 @@ export default function Home() {
     if (document.readyState !== "complete") {
       const load = () => setLoading(false);
       window.addEventListener("load", load);
-      return window.removeEventListener("load", load);
+      return () => window.removeEventListener("load", load);
     } else {
       setLoading(false);
     }
