@@ -21,11 +21,13 @@ export default function ContactForm() {
           <input
             type="text"
             name="name"
+            id="name"
             placeholder="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
             className="text-black bg-[#bdbdbd] text-base font-normal rounded p-1 placeholder:text-gray-600"
             required
+            autoComplete="given-name"
           />
         </label>
         <label
@@ -36,11 +38,13 @@ export default function ContactForm() {
           <input
             type="email"
             name="email"
+            id="email"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             placeholder="Email"
             className="text-black bg-[#bdbdbd] text-base font-normal rounded p-1 placeholder:text-gray-600"
             required
+            autoComplete="email"
           />
         </label>
         <label
@@ -50,6 +54,7 @@ export default function ContactForm() {
           MESSAGE
           <textarea
             name="message"
+            id="message"
             value={message}
             onChange={(e) => setMessage(e.target.value)}
             placeholder="How can I help ?"

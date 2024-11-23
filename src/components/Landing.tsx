@@ -80,6 +80,7 @@ function Landing(_: any, ref: any) {
         alt="scroll animation"
         src={"/scrollAnimation.gif"}
         className="absolute bottom-10 size-16 scroll-animation z-10"
+        unoptimized
       />
     </div>
   );

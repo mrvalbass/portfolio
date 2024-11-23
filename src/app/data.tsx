@@ -129,9 +129,36 @@ export const journeySteps = [
         recognized by the French Government from La Capsule. <br /> <br />
         We perfected the use of the MERN Stack (MongoDB, Express.js, React with
         Next.js, Node.js).
-        <br />I even won the &quot;Kata Night&quot; contest, a competition of
-        algorithm exercises that a classmate and I won against all La Capsule
-        students.
+        <br /> <br />
+        During this training, we won the &quot;Kata Night&quot; contest, a
+        competition of algorithm exercises that my team won against all La
+        Capsule students.
+      </p>
+    ),
+  },
+  {
+    imgSrc: "/stellia.svg",
+    imgAlt: "Stellia logo",
+    place: "Stellia.ai",
+    city: "FULL REMOTE / 2024-2025",
+    occupation: "Fullstack web developer",
+    desc: (
+      <p>
+        Right after completing my training, Stellia.ai offered me an internship
+        as a Fullstack developer.
+        <br /> I joined the team to gain my first experience in the field of web
+        development <br /> <br /> They entrusted me with developing new
+        customization options for their main product, an AI-powered
+        conversational assistant designed to enhance education.
+        <br /> I also contributed to the development of the company&apos;s new
+        design system and participated in the development of new disruptive
+        products <br /> <br /> On the backend side, I had the opportunity to
+        deepen my knowledge of GraphQL and Typescript by migrating some
+        resolvers to Typescript and validating them at runtime using Zod.
+        <br /> Additionally, I developed and updated several routes to serve the
+        data required on the frontend
+        <br /> <br /> This experience solidified my passion for web development
+        as each task presented a new challenge that I was eager to tackle.
       </p>
     ),
   },
@@ -143,19 +170,20 @@ export const journeySteps = [
     occupation: "Fullstack web and/or mobile developer",
     desc: (
       <p>
-        I am looking for the company that will open its doors to the asset I
-        represent. <br /> <br /> Aside from my development skills, you would
-        benefit from :<br />
+        I am looking for a new company to thrive in. <br /> <br /> Aside from my
+        development skills and experience depicted in the previous cards, you
+        will benefit from :<br />
         - my innovative problem-solving skills,
         <br />
         - my engineering training,
         <br />
         - my experience in the industry,
-        <br />
-        - my original approach as I did not follow a &quot;classic&quot; path to
-        become developer
         <br /> <br />
-        Contact me from the next section
+        The unconventional path that brought me to this point of my carrer
+        reflects my professionalism and strong motivation to lead your projects
+        to success.
+        <br /> <br />
+        Contact me from the next section to discuss how I can help you.
       </p>
     ),
   },

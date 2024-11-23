@@ -7,13 +7,13 @@ interface CarouselProps {
 }
 
 export default function Carousel({ children, className }: CarouselProps) {
-  const [currentSlide, setCurrentSlide] = useState(5);
+  const [currentSlide, setCurrentSlide] = useState(6);
 
   return (
     <div className={`flex md:max-w-[50vw] relative items-center ${className}`}>
       <button
         className="absolute z-10 left-0 md:relative h-12 aspect-square duration-200 hover:scale-110"
-        onClick={() => setCurrentSlide((prev) => (prev ? prev - 1 : 6))}
+        onClick={() => setCurrentSlide((prev) => (prev ? prev - 1 : 7))}
       >
         <Image fill={true} src="/carousel-arrow.svg" alt="Left Arrow" />
       </button>
@@ -27,7 +27,7 @@ export default function Carousel({ children, className }: CarouselProps) {
       </div>
       <button
         className="absolute right-0 md:relative h-12 aspect-square rotate-180 duration-200 hover:scale-110"
-        onClick={() => setCurrentSlide((prev) => (prev === 6 ? 0 : prev + 1))}
+        onClick={() => setCurrentSlide((prev) => (prev === 7 ? 0 : prev + 1))}
       >
         <Image fill={true} src="/carousel-arrow.svg" alt="Right Arrow" />
       </button>
