@@ -44,18 +44,12 @@ export default function Stellia() {
           </div>
         </div>
         <div className="relative flex justify-center h-[60svh] w-full md:h-[90vh] md:basis-1/3 ">
-          <Link
-            href={"https://simylare.vercel.app/"}
-            target="_blank"
-            className="w-full rounded-lg"
-          >
-            <video
-              src="/stellia.mov"
-              autoPlay
-              loop
-              className="absolute z-10 h-full rounded-xl"
-            />
-          </Link>
+          <video
+            src="/stellia.mov"
+            autoPlay
+            loop
+            className="absolute z-10 h-full rounded-xl"
+          />
         </div>
       </div>
     </div>
