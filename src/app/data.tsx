@@ -191,6 +191,31 @@ export const journeySteps = [
 
 export const webProjects = [
   {
+    name: "Stellia",
+    img: "/stellia.svg",
+    alt: "stellia Logo",
+    fit: "contain",
+    link: "/stellia",
+    technoIcons: [faJs, faReact, faNodeJs],
+  },
+
+  {
+    name: "Simylare",
+    img: "/simylare.svg",
+    alt: "Simylare Logo",
+    fit: "contain",
+    link: "/simylare",
+    technoIcons: [faJs, faReact, faNodeJs],
+  },
+  {
+    name: "Notre p'tit bébé",
+    img: "/genderbet-logo.jpg",
+    alt: "Notre p'tit bébé Screenshot",
+    fit: "cover",
+    link: "/genderbet",
+    technoIcons: [faJs, faReact, faNodeJs],
+  },
+  {
     name: "Concept 360",
     img: "/concept360.png",
     alt: "Concept 360 Screenshot",
@@ -199,7 +224,6 @@ export const webProjects = [
     link: "https://concept360-frontend-web.vercel.app/",
     technoIcons: [faJs, faReact, faNodeJs],
   },
-
   {
     name: "HackaTweet",
     img: "/hackatweet.png",
@@ -228,15 +252,6 @@ export const webProjects = [
     technoIcons: [faHtml5, faCss3, faJs, faNodeJs],
   },
   {
-    name: "Weather App",
-    img: "/weather-app.png",
-    alt: "Weather App Screenshot",
-    fit: "cover",
-    link: "https://weatherapp-frontend-nine-theta.vercel.app/",
-    target: "_blank",
-    technoIcons: [faHtml5, faCss3, faJs, faNodeJs],
-  },
-  {
     name: "TWINS",
     img: "/logo-mane.svg",
     alt: "Mane logo",
@@ -251,24 +266,6 @@ export const webProjects = [
     fit: "contain",
     link: "/flavour-analyst",
     technoIcons: [faHtml5, faCss3, faPython],
-  },
-  {
-    name: "Calculator",
-    img: "/calculator.png",
-    alt: "Calculator Screenshot",
-    fit: "cover",
-    link: "https://mrvalbass.github.io/odin-calculator/",
-    target: "_blank",
-    technoIcons: [faHtml5, faCss3, faJs],
-  },
-  {
-    name: "Rock Paper Scissors Game",
-    img: "/rock-paper-scissors.png",
-    alt: "Rock Paper Scissors Screenshot",
-    fit: "cover",
-    link: "https://mrvalbass.github.io/odin-rock_paper_scissors/",
-    target: "_blank",
-    technoIcons: [faHtml5, faCss3, faJs],
   },
 ];
 
