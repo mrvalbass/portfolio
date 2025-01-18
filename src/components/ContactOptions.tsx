@@ -49,7 +49,7 @@ export default function ContactOptions() {
         </p>
       </div>
       <a
-        href="mailto:vvm.guillot@gmail.com"
+        href="mailto:dev-web+portfolio@valentinguillot.fr"
         target="_blank"
         className="h-full grow shrink basis-0"
       >
