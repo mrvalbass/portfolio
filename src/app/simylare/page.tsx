@@ -31,7 +31,7 @@ export default function Simylare() {
             The project is still on going at the time. <br /> It will use
             Etsy&apos;s API to manage products pages <br /> <br />
             <a
-              href="https://simylare.vercel.app/"
+              href="https://simylare.com/"
               className="cursor-pointer font-bold hover:scale-105 active:scale-100"
             >
               Try it ➚
@@ -46,7 +46,7 @@ export default function Simylare() {
         </div>
         <div className="relative flex justify-center h-[60svh] w-full md:h-[90vh] md:basis-1/2 ">
           <Link
-            href={"https://simylare.vercel.app/"}
+            href={"https://simylare.com/"}
             target="_blank"
             className="w-full rounded-lg"
           >
